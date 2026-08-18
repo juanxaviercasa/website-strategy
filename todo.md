@@ -37,4 +37,4 @@
 - [x] Permitir eliminar una vista guardada individual desde el selector o una lista de vistas, manteniendo guardar/aplicar sin borrar todas las demás.
 - [x] Añadir una prueba de unidad para crear y eliminar una vista guardada individual.
 - [x] Validar pruebas, revisión visual y documentación de las nuevas herramientas operativas.
-- [ ] Publicar la versión validada en el repositorio GitHub `juanxaviercasa/website-strategy-`.
+- [x] Publicar la versión validada en el repositorio GitHub `juanxaviercasa/website-strategy-`.
