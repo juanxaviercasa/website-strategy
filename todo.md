@@ -31,3 +31,10 @@
 - [x] Implementar acciones de reintento para los conectores DEMO y el handoff placeholder, sin realizar llamadas externas no autorizadas.
 - [x] Incorporar un comparador visual entre dos exportaciones almacenadas del mismo pipeline.
 - [x] Probar la actualización, revisar visualmente filtros, reintentos y comparador, y guardar un checkpoint.
+- [x] Añadir alertas visuales no intrusivas para fallos, reintentos disponibles y conectores pendientes de autorización.
+- [x] Permitir guardar, aplicar y eliminar vistas de filtro frecuentes de la cola de negocios.
+- [x] Incorporar comparación de contenido legible entre dos exportaciones JSON o Markdown, preservando sus límites de procedencia.
+- [x] Permitir eliminar una vista guardada individual desde el selector o una lista de vistas, manteniendo guardar/aplicar sin borrar todas las demás.
+- [x] Añadir una prueba de unidad para crear y eliminar una vista guardada individual.
+- [x] Validar pruebas, revisión visual y documentación de las nuevas herramientas operativas.
+- [ ] Publicar la versión validada en el repositorio GitHub `juanxaviercasa/website-strategy-`.

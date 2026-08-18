@@ -32,6 +32,14 @@ The connector view was visually verified with four state cards. Each card displa
 
 The delivery archive was visually verified with the comparison workflow present. When files are stored, users can select two items and see a side-by-side metadata comparison of filename, format, artifact type and creation time. The empty-state view correctly explains how to create the first stored export before comparison is available.
 
+## Operational tooling update
+
+The dashboard was reviewed in its queue, connectors and delivery-archive views. Non-intrusive alerts identify the external endpoint authorization boundary and the opportunity to save a repeatable queue view; each alert has one focused action and can be dismissed locally.
+
+The queue view shows the full filter and ordering system alongside the save/apply controls. Saved views are intentionally scoped to the browser through local storage and do not create a shared database record or invoke an external service.
+
+The delivery archive retains metadata comparison for all formats and adds content comparison for JSON and Markdown. When a PDF is included, the interface deliberately limits the comparison to metadata and download, avoiding an unsupported or misleading text extraction path.
+
 ## Important boundary
 
 The verification intentionally uses DEMO records and mocked provider paths. It does not represent a claim about the public digital presence, reviews, ratings, services or credentials of the sample businesses. External API connectors remain documented placeholders until configured outside this implementation.
