@@ -16,6 +16,14 @@ The connector panel was verified through `?panel=connectors`. It presents the We
 
 The delivery archive was verified through `?panel=archive`. It presents the completed-package count, a selectable PDF/JSON/Markdown format and a direct **Export build spec** control for the newest completed pipeline. The export action reuses the established S3-backed export procedure rather than introducing a second persistence path.
 
+## Operational dashboard controls update
+
+The business-intake view now exposes a text filter across business, category and location, an opportunity threshold filter, and order controls for opportunity, business name and synchronization status. The number of visible records is displayed next to the mode indicator and an empty result provides a one-click reset.
+
+The connector dashboard was rechecked with four distinct visual status indicators: inbound dossier, generation engine, S3 export storage and outbound handoff. Internal DEMO-ready services are visually distinguished from the authorization-dependent outbound placeholder.
+
+The delivery archive now queries the persisted export list for the latest completed audit. It shows a downloadable-file history when exports exist and a specific empty state when no file has been stored yet; the create control is available in PDF, JSON and Markdown.
+
 ## Important boundary
 
 The verification intentionally uses DEMO records and mocked provider paths. It does not represent a claim about the public digital presence, reviews, ratings, services or credentials of the sample businesses. External API connectors remain documented placeholders until configured outside this implementation.

@@ -22,3 +22,7 @@
 - [x] Mejorar la interfaz del sistema con un panel de operaciones y conectores más claro, accionable y consistente.
 - [x] Añadir una exportación disponible desde el dashboard para el último pipeline completado, con formato seleccionable y almacenamiento S3.
 - [x] Probar las mejoras, revisar visualmente el dashboard y guardar el checkpoint actualizado.
+- [x] Incorporar al archivo de entregas un historial descargable de exportaciones S3 del pipeline seleccionado.
+- [x] Añadir indicadores visuales para el estado de los conectores inbound, generación, almacenamiento y handoff outbound.
+- [x] Añadir filtro por negocio y ordenación por oportunidad, sincronización y nombre en la cola de negocios.
+- [x] Probar la actualización, revisar visualmente los nuevos controles y guardar un checkpoint.
