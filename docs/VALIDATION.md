@@ -10,6 +10,12 @@ The authenticated dashboard was verified with the automatic DEMO initialization 
 
 The design-system deep link was also verified using `?artifact=design_system`. It rendered the complete proposed color-token preview, artifact version, provider and data-origin labels, along with the validation disclaimer distinguishing the direction from an official brand system.
 
+## Dashboard operations update
+
+The connector panel was verified through `?panel=connectors`. It presents the Web App 1 inbound dossier, the strategy pipeline and the outbound placeholder as a clearly ordered operating path, with a functional action to prepare the latest handoff without making an external delivery.
+
+The delivery archive was verified through `?panel=archive`. It presents the completed-package count, a selectable PDF/JSON/Markdown format and a direct **Export build spec** control for the newest completed pipeline. The export action reuses the established S3-backed export procedure rather than introducing a second persistence path.
+
 ## Important boundary
 
 The verification intentionally uses DEMO records and mocked provider paths. It does not represent a claim about the public digital presence, reviews, ratings, services or credentials of the sample businesses. External API connectors remain documented placeholders until configured outside this implementation.

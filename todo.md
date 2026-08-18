@@ -18,3 +18,7 @@
 - [x] Documentar los placeholders, las variables requeridas y el contrato de integración para sustituir proveedores DEMO posteriormente.
 - [x] Crear y ejecutar pruebas automáticas de backend y flujo DEMO de extremo a extremo.
 - [x] Revisar visualmente la interfaz, corregir incidencias y guardar el checkpoint final.
+- [x] Añadir una función de dashboard para preparar y explicar la conexión contractualmente segura con Web App 1 sin solicitar credenciales.
+- [x] Mejorar la interfaz del sistema con un panel de operaciones y conectores más claro, accionable y consistente.
+- [x] Añadir una exportación disponible desde el dashboard para el último pipeline completado, con formato seleccionable y almacenamiento S3.
+- [x] Probar las mejoras, revisar visualmente el dashboard y guardar el checkpoint actualizado.
