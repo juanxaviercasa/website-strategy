@@ -24,6 +24,14 @@ The connector dashboard was rechecked with four distinct visual status indicator
 
 The delivery archive now queries the persisted export list for the latest completed audit. It shows a downloadable-file history when exports exist and a specific empty state when no file has been stored yet; the create control is available in PDF, JSON and Markdown.
 
+## Advanced filtering, retry and comparison update
+
+The queue was visually verified with the search, opportunity, category and location controls visible together. The resulting layout preserves the current record count, provides a reset action, and retains the existing ordering controls.
+
+The connector view was visually verified with four state cards. Each card displays its current state, a last-activity indicator and an explicit next-retry value. Inbound DEMO sync and outbound placeholder handoff expose safe retry actions; no external request is performed by either control.
+
+The delivery archive was visually verified with the comparison workflow present. When files are stored, users can select two items and see a side-by-side metadata comparison of filename, format, artifact type and creation time. The empty-state view correctly explains how to create the first stored export before comparison is available.
+
 ## Important boundary
 
 The verification intentionally uses DEMO records and mocked provider paths. It does not represent a claim about the public digital presence, reviews, ratings, services or credentials of the sample businesses. External API connectors remain documented placeholders until configured outside this implementation.

@@ -26,3 +26,8 @@
 - [x] Añadir indicadores visuales para el estado de los conectores inbound, generación, almacenamiento y handoff outbound.
 - [x] Añadir filtro por negocio y ordenación por oportunidad, sincronización y nombre en la cola de negocios.
 - [x] Probar la actualización, revisar visualmente los nuevos controles y guardar un checkpoint.
+- [x] Añadir filtros de categoría y ubicación, además de los filtros y ordenación existentes de la cola de negocios.
+- [x] Mostrar el estado, la última actividad y el momento de próximo reintento de cada conector operativo.
+- [x] Implementar acciones de reintento para los conectores DEMO y el handoff placeholder, sin realizar llamadas externas no autorizadas.
+- [x] Incorporar un comparador visual entre dos exportaciones almacenadas del mismo pipeline.
+- [x] Probar la actualización, revisar visualmente filtros, reintentos y comparador, y guardar un checkpoint.

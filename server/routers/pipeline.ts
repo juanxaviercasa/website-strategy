@@ -1,6 +1,6 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
-import { createExportRecord, getAuditDetail, getLatestArtifact, listAuditsWithBusinesses, listBusinesses, listExports, recordIntegrationSync, saveArtifact, updateStage, upsertImportedBusiness } from "../db";
+import { createExportRecord, getAuditDetail, getLatestArtifact, listAuditsWithBusinesses, listBusinesses, listExports, listIntegrationSyncs, recordIntegrationSync, saveArtifact, updateStage, upsertImportedBusiness } from "../db";
 import { normalizeWebApp1Export } from "../contracts/webApp1";
 import { normalizeWebApp1Dossier } from "../contracts/webApp1";
 import { getLeadSourceProvider } from "../providers/leadSource";
@@ -18,6 +18,11 @@ export const pipelineRouter = router({
   dashboard: protectedProcedure.query(async ({ ctx }) => {
     const [businesses, audits] = await Promise.all([listBusinesses(ctx.user.id), listAuditsWithBusinesses(ctx.user.id)]);
     return { businesses, audits, integration: { inbound: "web_app_1_demo", outbound: "web_app_1_placeholder", mode: "free_first" } };
+  }),
+
+  connectorStatus: protectedProcedure.query(async ({ ctx }) => {
+    const syncs = await listIntegrationSyncs(ctx.user.id);
+    return { syncs, refreshedAt: new Date() };
   }),
 
   importDemo: protectedProcedure.mutation(async ({ ctx }) => {

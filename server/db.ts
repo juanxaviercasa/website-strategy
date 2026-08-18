@@ -86,6 +86,12 @@ export async function recordIntegrationSync(input: { ownerId: number; connector:
   await db.insert(integrationSyncs).values({ ...input, reference: input.reference ?? null, details: input.details ?? null });
 }
 
+export async function listIntegrationSyncs(ownerId: number) {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(integrationSyncs).where(eq(integrationSyncs.ownerId, ownerId)).orderBy(desc(integrationSyncs.createdAt)).limit(24);
+}
+
 export async function listBusinesses(ownerId: number) {
   const db = await getDb();
   if (!db) return [];
