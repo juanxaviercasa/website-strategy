@@ -1,0 +1,20 @@
+# Project TODO
+
+- [x] Analizar el contrato de datos y la estructura de integración de Web App 1 mediante `lead_id`.
+- [x] Validar el intercambio modular Web App 1 → Web App 2 y el handoff Web App 2 → módulo posterior sin acoplarse a proveedores concretos.
+- [x] Definir los modelos versionables para negocios, auditorías, artefactos del pipeline, exportaciones y sincronizaciones.
+- [x] Implementar adaptadores desacoplados para importación de Web App 1 y sincronización de resultados, con un proveedor DEMO operativo y placeholders configurables.
+- [x] Completar y verificar la capa operativa de importación/sincronización: exponer procedimientos para importar desde el contrato de Web App 1, persistir negocios y registrar sincronizaciones inbound/outbound.
+- [x] Implementar y verificar el adaptador placeholder de sincronización de resultados hacia el módulo posterior sin acoplarse a un proveedor real.
+- [x] Implementar proveedores free-first para auditoría digital con datos DEMO estructurados y rutas de extensión para servicios de pago.
+- [x] Implementar generación estructurada con LLM para estrategia, Brand DNA, design system, sitemap, contenido, prompts de Stitch y especificación técnica, con fallback DEMO sin coste.
+- [x] Verificar el proveedor LLM, el fallback DEMO y el versionado de artefactos mediante pruebas backend.
+- [x] Construir el pipeline navegable por etapas desde un dashboard central con cola de auditorías, estados, progreso y regeneración individual.
+- [x] Incorporar la previsualización del design system y los artefactos generados, identificando el origen de cada dato.
+- [x] Aplicar y verificar el dashboard y la vista de detalle del pipeline, incluidas sus rutas y controles conectados a tRPC.
+- [x] Verificar la previsualización del design system y el etiquetado visible de provider y dataOrigin en la interfaz.
+- [x] Implementar exportaciones JSON, Markdown y PDF almacenadas en S3 y registradas en base de datos.
+- [x] Notificar al propietario cuando un pipeline complete correctamente todas sus etapas.
+- [x] Documentar los placeholders, las variables requeridas y el contrato de integración para sustituir proveedores DEMO posteriormente.
+- [x] Crear y ejecutar pruebas automáticas de backend y flujo DEMO de extremo a extremo.
+- [x] Revisar visualmente la interfaz, corregir incidencias y guardar el checkpoint final.
